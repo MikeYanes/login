@@ -2,7 +2,7 @@
 	$usuario=$_POST['us'];
 	$password=$_POST['co'];
 
-	$conexion=mysqli_connect("localhost","root","","bdlog");
+	$conexion=mysqli_connect("localhost","mike","ugb","bdlog");
 
 	$consulta="SELECT * FROM usuarios WHERE usuario='$usuario' and clave='$password'";
 	$resultado=mysqli_query($conexion, $consulta);
